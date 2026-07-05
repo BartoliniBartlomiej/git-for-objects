@@ -10,6 +10,9 @@ FetchContent_MakeAvailable(googletest)
 
 add_executable(versioned_tests
     test_version.cpp
+    test_versioned.cpp
+    test_history.cpp
+    test_diff.cpp
 )
 
 target_link_libraries(versioned_tests PRIVATE versioned::versioned GTest::gtest_main)
